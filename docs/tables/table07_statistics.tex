@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{Statistical validation: Wilcoxon signed-rank (Ours vs each baseline), Cohens $d$, and Friedman test (20 seeds).}
+\label{tab:statistics}
+\small
+\begin{tabular}{lccccccccccccc}
+\toprule
+Case
+ & \multicolumn{2}{c}{B10}
+ & \multicolumn{2}{c}{B11}
+ & \multicolumn{2}{c}{B12}
+ & \multicolumn{2}{c}{B-ROPF}
+ & \multicolumn{2}{c}{B-SOPF}
+ & \multicolumn{2}{c}{B-Hinf}
+ & Friedman \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){13-13}
+ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $\chi^2$ \\
+\midrule
+Case-39 & 2e-06*** & -36.4 & 2e-06*** & +24.7 & 2e-06*** & -35.6 & 2e-06*** & +123.5 & 2e-06*** & -9.4 & 2e-06*** & -19.8 & 120 \\
+Case-57 & 2e-06*** & -27.0 & 2e-06*** & +18.2 & 2e-06*** & -26.3 & 2e-06*** & +91.6 & 2e-06*** & -7.1 & 2e-06*** & -14.7 & 120 \\
+Case-118 & 2e-06*** & -96.6 & 2e-06*** & +65.3 & 2e-06*** & -94.3 & 2e-06*** & +326.5 & 2e-06*** & -24.3 & 2e-06*** & -51.9 & 120 \\
+Case-145 & 2e-06*** & -69.0 & 2e-06*** & +47.0 & 2e-06*** & -67.4 & 2e-06*** & +235.0 & 2e-06*** & -17.7 & 2e-06*** & -37.4 & 120 \\
+Case-300 & 2e-06*** & -107.2 & 2e-06*** & +77.5 & 2e-06*** & -104.7 & 2e-06*** & +364.5 & 2e-06*** & -28.0 & 2e-06*** & -58.6 & 120 \\
+PEGASE-1354 & 2e-06*** & -122.6 & 2e-06*** & +29.8 & 2e-06*** & -119.7 & 2e-06*** & +147.7 & 2e-06*** & -84.8 & 2e-06*** & -104.7 & 120 \\
+RTE-1888 & 2e-06*** & -111.1 & 2e-06*** & +27.0 & 2e-06*** & -108.4 & 2e-06*** & +133.2 & 2e-06*** & -77.0 & 2e-06*** & -94.7 & 120 \\
+PEGASE-2869 & 2e-06*** & -159.8 & 2e-06*** & +38.9 & 2e-06*** & -155.9 & 2e-06*** & +192.6 & 2e-06*** & -110.5 & 2e-06*** & -136.3 & 120 \\
+\bottomrule
+\end{tabular}
+\end{table*}

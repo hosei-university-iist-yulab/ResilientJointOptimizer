@@ -1,0 +1,138 @@
+# Energy-Information Co-Optimization Configuration
+
+# =============================================================================
+# Data Settings
+# =============================================================================
+data:
+  ieee_cases: [14, 39, 118]  # IEEE test systems to use
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  num_scenarios: 1000  # Number of load scenarios per case
+  seed: 42
+
+# Communication delay settings
+delays:
+  distribution: "lognormal"  # lognormal, uniform, exponential
+  mean_ms: 50  # Mean delay in milliseconds
+  std_ms: 20   # Std deviation
+  min_ms: 5    # Minimum delay
+  max_ms: 500  # Maximum delay
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  # Embedding dimensions
+  embed_dim: 128
+  hidden_dim: 256
+
+  # GNN settings
+  gnn_layers: 3
+  gnn_type: "GAT"  # GAT, GCN, GraphSAGE
+
+  # Attention settings
+  num_heads: 8
+  attention_dropout: 0.1
+  use_causal_mask: true
+  use_physics_mask: true
+
+  # Physics mask (V2: reduced gamma + adaptive mode to fix entropy=0, Q3.3)
+  physics_mask_gamma: 0.1  # Strength of impedance-based attention bias
+  adaptive_gamma: true     # Learnable gamma that scales with attention magnitude
+
+  # Encoder
+  energy_input_dim: 5   # [P, Q, V, theta, omega]
+  comm_input_dim: 3     # [tau, R, B]
+
+  # Decoder
+  decoder_layers: 2
+  output_dim: null  # Set dynamically based on controllable buses
+
+# =============================================================================
+# Loss Function Weights
+# =============================================================================
+loss:
+  # L_E: Energy loss
+  cost_weight: 1.0
+  voltage_weight: 10.0
+  frequency_weight: 100.0
+
+  # L_I: Information loss
+  latency_weight: 1.0
+  bandwidth_penalty: 10.0
+
+  # L_coupling: Stability coupling
+  alpha: 1.0              # Log-barrier weight
+  beta: 0.1               # Control deviation weight
+  rho_min: 0.01           # Minimum stability margin (barrier)
+
+  # L_align: Contrastive
+  contrastive_weight: 0.1
+  temperature: 0.07
+
+# =============================================================================
+# Training Settings
+# =============================================================================
+training:
+  epochs: 500
+  batch_size: 32
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+
+  # Scheduler
+  scheduler: "cosine"  # cosine, step, plateau
+  warmup_epochs: 10
+  min_lr: 1e-6
+
+  # Optimization
+  optimizer: "adamw"
+  gradient_clip: 1.0
+
+  # Early stopping
+  patience: 50
+  min_delta: 1e-4
+
+  # Checkpointing
+  save_every: 10
+  keep_last_k: 5
+
+# =============================================================================
+# Stability Computation
+# =============================================================================
+stability:
+  # Learnable K_i initialization
+  k_init_scale: 0.1
+
+  # Delay margin computation
+  tau_max_method: "crossover"  # crossover, eigenvalue, fixed
+  tau_max_fixed_ms: 500        # If fixed method
+
+  # Eigenvalue computation
+  eigenvalue_method: "scipy"   # scipy, lanczos
+  lanczos_k: 10                # Top-k eigenvalues for Lanczos
+
+# =============================================================================
+# Experiment Tracking
+# =============================================================================
+wandb:
+  project: "energy-info-cooptimization"
+  entity: null  # Set to your wandb username
+  tags: ["transformer", "gnn", "power-systems", "smartgrid"]
+  log_every: 10
+
+# =============================================================================
+# Hardware
+# =============================================================================
+hardware:
+  device: "cuda"
+  num_workers: 4
+  pin_memory: true
+  mixed_precision: true  # FP16 training
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+reproducibility:
+  seed: 42
+  deterministic: true

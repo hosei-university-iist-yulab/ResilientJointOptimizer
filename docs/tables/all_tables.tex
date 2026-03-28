@@ -1,0 +1,163 @@
+% Auto-generated LaTeX tables — Multi-Impairment Resilience
+% Generated: 2026-03-25T03:48:27.513347
+% Cases: [39, 57, 118, 145, 300, 1354, 1888, 2869]
+
+% === table01_comparison.tex ===
+\begin{table*}[t]
+\centering
+\caption{Multi-impairment stability comparison across 8 real power systems (mean $\pm$ std over 20 seeds).}
+\label{tab:comparison}
+\small
+\begin{tabular}{lcccccccccccccccc}
+\toprule
+Model & \multicolumn{2}{c}{Case-39} & \multicolumn{2}{c}{Case-57} & \multicolumn{2}{c}{Case-118} & \multicolumn{2}{c}{Case-145} & \multicolumn{2}{c}{Case-300} & \multicolumn{2}{c}{PEGASE-1354} & \multicolumn{2}{c}{RTE-1888} & \multicolumn{2}{c}{PEGASE-2869} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){14-15}\cmidrule(lr){16-17}
+ & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% \\
+\midrule
+B10: Delay-Only & $0.0333 \pm 0.0000$ & 100.0 & $0.0401 \pm 0.0000$ & 100.0 & $0.0480 \pm 0.0000$ & 100.0 & $0.0712 \pm 0.0000$ & 100.0 & $0.0574 \pm 0.0000$ & 100.0 & $0.0718 \pm 0.0000$ & 100.0 & $0.0667 \pm 0.0000$ & 100.0 & $0.0737 \pm 0.0000$ & 100.0 \\
+B11: Fixed Constants & $0.0237 \pm 0.0003$ & 100.0 & $0.0286 \pm 0.0005$ & 100.0 & $0.0341 \pm 0.0002$ & 100.0 & $0.0507 \pm 0.0004$ & 100.0 & $0.0408 \pm 0.0002$ & 100.0 & $0.0519 \pm 0.0002$ & 100.0 & $0.0482 \pm 0.0002$ & 100.0 & $0.0533 \pm 0.0002$ & 100.0 \\
+B12: TCP Retransmit & $0.0333 \pm 0.0000$ & 100.0 & $0.0400 \pm 0.0000$ & 100.0 & $0.0479 \pm 0.0000$ & 100.0 & $0.0711 \pm 0.0000$ & 100.0 & $0.0573 \pm 0.0000$ & 100.0 & $0.0715 \pm 0.0000$ & 100.0 & $0.0664 \pm 0.0000$ & 100.0 & $0.0734 \pm 0.0000$ & 100.0 \\
+B-ROPF: Robust OPF & $0.0185 \pm 0.0000$ & 100.0 & $0.0223 \pm 0.0000$ & 100.0 & $0.0267 \pm 0.0000$ & 100.0 & $0.0396 \pm 0.0000$ & 100.0 & $0.0319 \pm 0.0000$ & 100.0 & $0.0406 \pm 0.0000$ & 100.0 & $0.0377 \pm 0.0000$ & 100.0 & $0.0417 \pm 0.0000$ & 100.0 \\
+B-SOPF: Stochastic OPF & $0.0310 \pm 0.0001$ & 100.0 & $0.0373 \pm 0.0001$ & 100.0 & $0.0446 \pm 0.0000$ & 100.0 & $0.0662 \pm 0.0001$ & 100.0 & $0.0533 \pm 0.0000$ & 100.0 & $0.0678 \pm 0.0000$ & 100.0 & $0.0630 \pm 0.0000$ & 100.0 & $0.0697 \pm 0.0000$ & 100.0 \\
+B-H$\infty$: H-Inf Ctrl & $0.0320 \pm 0.0001$ & 100.0 & $0.0385 \pm 0.0001$ & 100.0 & $0.0461 \pm 0.0000$ & 100.0 & $0.0683 \pm 0.0001$ & 100.0 & $0.0550 \pm 0.0000$ & 100.0 & $0.0700 \pm 0.0000$ & 100.0 & $0.0651 \pm 0.0000$ & 100.0 & $0.0719 \pm 0.0000$ & 100.0 \\
+\textbf{Ours (Multi-Imp.)} & $0.0300 \pm 0.0001$ & 100.0 & $0.0361 \pm 0.0002$ & 100.0 & $0.0432 \pm 0.0001$ & 100.0 & $0.0641 \pm 0.0001$ & 100.0 & $0.0516 \pm 0.0001$ & 100.0 & $0.0577 \pm 0.0002$ & 100.0 & $0.0535 \pm 0.0002$ & 100.0 & $0.0592 \pm 0.0001$ & 100.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% === table02_ablation.tex ===
+\begin{table}[t]
+\centering
+\caption{Ablation: contribution of each impairment constant family.}
+\label{tab:ablation}
+\begin{tabular}{lcccc}
+\toprule
+Case & $K$ only & $K{+}R$ & $K{+}R{+}J$ & Overest.\% \\
+\midrule
+Case-39 & 0.0326 & 0.0303 & \textbf{0.0301} & 8.4\% \\
+Case-57 & 0.0392 & 0.0362 & \textbf{0.0358} & 9.4\% \\
+Case-118 & 0.0469 & 0.0435 & \textbf{0.0431} & 8.9\% \\
+Case-145 & 0.0696 & 0.0647 & \textbf{0.0641} & 8.5\% \\
+Case-300 & 0.0561 & 0.0522 & \textbf{0.0517} & 8.5\% \\
+PEGASE-1354 & 0.0685 & 0.0588 & \textbf{0.0577} & 18.8\% \\
+RTE-1888 & 0.0637 & 0.0547 & \textbf{0.0537} & 18.6\% \\
+PEGASE-2869 & 0.0703 & 0.0603 & \textbf{0.0591} & 18.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% === table03_overestimation.tex ===
+\begin{table}[t]
+\centering
+\caption{Safety overestimation: delay-only (B10) vs multi-impairment (Ours).}
+\label{tab:overestimation}
+\begin{tabular}{lccccc}
+\toprule
+Case & $\rho_{\text{B10}}$ & $\rho_{\text{Ours}}$ & Overest.\% & False Safe\% & Vuln.Gen \\
+\midrule
+Case-39 & 0.0333 & \textbf{0.0301} & 11.3\% & 0.0\% & G2 \\
+Case-57 & 0.0401 & \textbf{0.0358} & 12.4\% & 0.0\% & G7 \\
+Case-118 & 0.0480 & \textbf{0.0431} & 11.5\% & 0.0\% & G33 \\
+Case-145 & 0.0712 & \textbf{0.0641} & 11.1\% & 0.0\% & G33 \\
+Case-300 & 0.0574 & \textbf{0.0517} & 11.1\% & 0.0\% & G26 \\
+PEGASE-1354 & 0.0718 & \textbf{0.0577} & 24.6\% & 0.0\% & G148 \\
+RTE-1888 & 0.0667 & \textbf{0.0537} & 24.4\% & 0.0\% & G142 \\
+PEGASE-2869 & 0.0737 & \textbf{0.0591} & 24.7\% & 0.0\% & G459 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% === table04_scalability.tex ===
+\begin{table}[t]
+\centering
+\caption{Computational overhead: Ours vs B10 (delay-only).}
+\label{tab:scalability}
+\begin{tabular}{lrrrcc}
+\toprule
+Case & Buses & B10 (ms) & Ours (ms) & Param+\% & Lat.+\% \\
+\midrule
+Case-39 & 39 & 8.33 & 50.24 & +3.7\% & +503.3\% \\
+Case-57 & 57 & 69.28 & 44.78 & +3.7\% & +-35.4\% \\
+Case-118 & 118 & 20.44 & 46.24 & +3.5\% & +126.3\% \\
+Case-145 & 145 & 45.14 & 24.88 & +3.5\% & +-44.9\% \\
+Case-300 & 300 & 52.63 & 11.17 & +3.4\% & +-78.8\% \\
+PEGASE-1354 & 1354 & 20.12 & 3.23 & +3.8\% & +-84.0\% \\
+RTE-1888 & 1888 & 1.88 & 5.26 & +3.7\% & +179.6\% \\
+PEGASE-2869 & 2869 & 27.71 & 21.70 & +2.8\% & +-21.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% === table05_sweep.tex ===
+\begin{table}[t]
+\centering
+\caption{Critical packet loss threshold $p_{\text{crit}}$ per case (loss rate where $\rho = 0$).}
+\label{tab:sweep}
+\begin{tabular}{lccc}
+\toprule
+Case & $\rho(p{=}0)$ & $\rho(p{=}0.3)$ & Mean $p_{\text{crit}}$ \\
+\midrule
+Case-39 & 0.0284 & 0.0228 & 0.95 \\
+Case-57 & 0.0341 & 0.0273 & 0.93 \\
+Case-118 & 0.0408 & 0.0328 & 0.99 \\
+Case-145 & 0.0605 & 0.0486 & 0.99 \\
+Case-300 & 0.0488 & 0.0392 & 0.99 \\
+PEGASE-1354 & 0.0501 & 0.0266 & 1.00 \\
+RTE-1888 & 0.0465 & 0.0247 & 1.00 \\
+PEGASE-2869 & 0.0514 & 0.0273 & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% === table06_channel.tex ===
+\begin{table}[t]
+\centering
+\caption{Markov channel state prediction accuracy and margin by state.}
+\label{tab:channel}
+\begin{tabular}{lcccc}
+\toprule
+Case & Accuracy & $\rho_{\text{GOOD}}$ & $\rho_{\text{DEGRADED}}$ & $\rho_{\text{FAILED}}$ \\
+\midrule
+Case-39 & 0.7\% & 0.0301 & 0.0299 & -- \\
+Case-57 & 0.6\% & 0.0362 & 0.0346 & 0.0296 \\
+Case-118 & 0.2\% & 0.0431 & -- & -- \\
+Case-145 & 0.2\% & 0.0641 & -- & -- \\
+Case-300 & 0.1\% & 0.0517 & -- & -- \\
+PEGASE-1354 & 0.2\% & 0.0577 & -- & -- \\
+RTE-1888 & 0.2\% & 0.0537 & -- & -- \\
+PEGASE-2869 & 0.2\% & 0.0591 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% === table07_statistics.tex ===
+\begin{table*}[t]
+\centering
+\caption{Statistical validation: Wilcoxon signed-rank (Ours vs each baseline), Cohens $d$, and Friedman test (20 seeds).}
+\label{tab:statistics}
+\small
+\begin{tabular}{lccccccccccccc}
+\toprule
+Case
+ & \multicolumn{2}{c}{B10}
+ & \multicolumn{2}{c}{B11}
+ & \multicolumn{2}{c}{B12}
+ & \multicolumn{2}{c}{B-ROPF}
+ & \multicolumn{2}{c}{B-SOPF}
+ & \multicolumn{2}{c}{B-Hinf}
+ & Friedman \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){13-13}
+ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $p$ & $d$ & $\chi^2$ \\
+\midrule
+Case-39 & 2e-06*** & -36.4 & 2e-06*** & +24.7 & 2e-06*** & -35.6 & 2e-06*** & +123.5 & 2e-06*** & -9.4 & 2e-06*** & -19.8 & 120 \\
+Case-57 & 2e-06*** & -27.0 & 2e-06*** & +18.2 & 2e-06*** & -26.3 & 2e-06*** & +91.6 & 2e-06*** & -7.1 & 2e-06*** & -14.7 & 120 \\
+Case-118 & 2e-06*** & -96.6 & 2e-06*** & +65.3 & 2e-06*** & -94.3 & 2e-06*** & +326.5 & 2e-06*** & -24.3 & 2e-06*** & -51.9 & 120 \\
+Case-145 & 2e-06*** & -69.0 & 2e-06*** & +47.0 & 2e-06*** & -67.4 & 2e-06*** & +235.0 & 2e-06*** & -17.7 & 2e-06*** & -37.4 & 120 \\
+Case-300 & 2e-06*** & -107.2 & 2e-06*** & +77.5 & 2e-06*** & -104.7 & 2e-06*** & +364.5 & 2e-06*** & -28.0 & 2e-06*** & -58.6 & 120 \\
+PEGASE-1354 & 2e-06*** & -122.6 & 2e-06*** & +29.8 & 2e-06*** & -119.7 & 2e-06*** & +147.7 & 2e-06*** & -84.8 & 2e-06*** & -104.7 & 120 \\
+RTE-1888 & 2e-06*** & -111.1 & 2e-06*** & +27.0 & 2e-06*** & -108.4 & 2e-06*** & +133.2 & 2e-06*** & -77.0 & 2e-06*** & -94.7 & 120 \\
+PEGASE-2869 & 2e-06*** & -159.8 & 2e-06*** & +38.9 & 2e-06*** & -155.9 & 2e-06*** & +192.6 & 2e-06*** & -110.5 & 2e-06*** & -136.3 & 120 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
