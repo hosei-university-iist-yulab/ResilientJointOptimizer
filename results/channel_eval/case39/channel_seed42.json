@@ -1,0 +1,22 @@
+{
+  "case_id": 39,
+  "seed": 42,
+  "channel_accuracy": 0.658,
+  "per_class_accuracy": {
+    "GOOD": 1.0,
+    "DEGRADED": 0.0,
+    "FAILED": 0.0
+  },
+  "rho_per_state": {
+    "GOOD": {
+      "mean": 0.030059741317693678,
+      "std": 0.001632244430964658,
+      "n_samples": 140
+    },
+    "DEGRADED": {
+      "mean": 0.029937912337481977,
+      "std": 0.0012797099505531425,
+      "n_samples": 10
+    }
+  }
+}

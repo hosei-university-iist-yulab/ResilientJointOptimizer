@@ -1,0 +1,93 @@
+Traceback (most recent call last):
+  File "/home/Aboya_25R9803/projects/perso/LLMium/projects/99-Special-Challenge/994-Two-Way-Energy-Info-Flow/topic2-packet-loss-jitter-resilience/scripts/run_arch_ablation.py", line 273, in <module>
+    main()
+    ~~~~^^
+  File "/home/Aboya_25R9803/projects/perso/LLMium/projects/99-Special-Challenge/994-Two-Way-Energy-Info-Flow/topic2-packet-loss-jitter-resilience/scripts/run_arch_ablation.py", line 265, in main
+    for (abl, case), vals in sorted(grouped.keys()):
+        ^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/run_arch_ablation.py --cases 39 --seeds 0 1 2 3 4 --epochs 100 --output results/ablation/arch_abl_39.json` failed. (See above for error)
+Note: torch_geometric not available. Using fallback GNN implementation.
+Device: cuda
+GPU: NVIDIA GeForce RTX 3090
+
+[1/25] Case=39 Abl=A-full Seed=0 (01:39:37)
+  rho=0.0241±0.0040 stab=100.0%
+
+[2/25] Case=39 Abl=A-full Seed=1 (01:41:14)
+  rho=0.0234±0.0041 stab=100.0%
+
+[3/25] Case=39 Abl=A-full Seed=2 (01:42:42)
+  rho=0.0243±0.0037 stab=100.0%
+
+[4/25] Case=39 Abl=A-full Seed=3 (01:44:09)
+  rho=0.0235±0.0039 stab=100.0%
+
+[5/25] Case=39 Abl=A-full Seed=4 (01:45:36)
+  rho=0.0233±0.0044 stab=100.0%
+
+[6/25] Case=39 Abl=A-no-phys Seed=0 (01:46:53)
+  rho=0.0241±0.0040 stab=100.0%
+
+[7/25] Case=39 Abl=A-no-phys Seed=1 (01:48:07)
+  rho=0.0234±0.0041 stab=100.0%
+
+[8/25] Case=39 Abl=A-no-phys Seed=2 (01:49:18)
+  rho=0.0243±0.0037 stab=100.0%
+
+[9/25] Case=39 Abl=A-no-phys Seed=3 (01:50:19)
+  rho=0.0235±0.0039 stab=100.0%
+
+[10/25] Case=39 Abl=A-no-phys Seed=4 (01:51:20)
+  rho=0.0233±0.0044 stab=100.0%
+
+[11/25] Case=39 Abl=A-no-causal Seed=0 (01:52:21)
+  rho=0.0241±0.0040 stab=100.0%
+
+[12/25] Case=39 Abl=A-no-causal Seed=1 (01:53:24)
+  rho=0.0234±0.0041 stab=100.0%
+
+[13/25] Case=39 Abl=A-no-causal Seed=2 (01:54:26)
+  rho=0.0243±0.0037 stab=100.0%
+
+[14/25] Case=39 Abl=A-no-causal Seed=3 (01:55:27)
+  rho=0.0235±0.0039 stab=100.0%
+
+[15/25] Case=39 Abl=A-no-causal Seed=4 (01:56:28)
+  rho=0.0233±0.0044 stab=100.0%
+
+[16/25] Case=39 Abl=A-no-cross Seed=0 (01:57:29)
+  rho=0.0241±0.0040 stab=100.0%
+
+[17/25] Case=39 Abl=A-no-cross Seed=1 (01:58:21)
+  rho=0.0234±0.0041 stab=100.0%
+
+[18/25] Case=39 Abl=A-no-cross Seed=2 (01:59:13)
+  rho=0.0243±0.0037 stab=100.0%
+
+[19/25] Case=39 Abl=A-no-cross Seed=3 (02:00:06)
+  rho=0.0235±0.0039 stab=100.0%
+
+[20/25] Case=39 Abl=A-no-cross Seed=4 (02:01:00)
+  rho=0.0233±0.0044 stab=100.0%
+
+[21/25] Case=39 Abl=A-none Seed=0 (02:01:58)
+  rho=0.0241±0.0040 stab=100.0%
+
+[22/25] Case=39 Abl=A-none Seed=1 (02:02:51)
+  rho=0.0234±0.0041 stab=100.0%
+
+[23/25] Case=39 Abl=A-none Seed=2 (02:03:44)
+  rho=0.0243±0.0037 stab=100.0%
+
+[24/25] Case=39 Abl=A-none Seed=3 (02:04:38)
+  rho=0.0235±0.0039 stab=100.0%
+
+[25/25] Case=39 Abl=A-none Seed=4 (02:05:30)
+  rho=0.0233±0.0044 stab=100.0%
+
+======================================================================
+Ablation           Case   rho_mean   rho_std   Stab%
+======================================================================
+

@@ -1,0 +1,92 @@
+[
+  {
+    "case": 1354,
+    "seed": 0,
+    "ablation": "A-no-phys",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 1,
+    "ablation": "A-no-phys",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 2,
+    "ablation": "A-no-phys",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 3,
+    "ablation": "A-no-phys",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 4,
+    "ablation": "A-no-phys",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 0,
+    "ablation": "A-no-causal",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 1,
+    "ablation": "A-no-causal",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 2,
+    "ablation": "A-no-causal",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 3,
+    "ablation": "A-no-causal",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 4,
+    "ablation": "A-no-causal",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 0,
+    "ablation": "A-none",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 1,
+    "ablation": "A-none",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 2,
+    "ablation": "A-none",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 3,
+    "ablation": "A-none",
+    "error": "name 'args' is not defined"
+  },
+  {
+    "case": 1354,
+    "seed": 4,
+    "ablation": "A-none",
+    "error": "name 'args' is not defined"
+  }
+]

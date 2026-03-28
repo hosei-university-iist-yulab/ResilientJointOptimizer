@@ -1,0 +1,44 @@
+Note: torch_geometric not available. Using fallback GNN implementation.
+Device: cuda
+GPU: NVIDIA GeForce RTX 3090
+
+[1/5] Case=39 Seed=0 (01:39:37)
+  Training Ours (126,144 params)...
+  Training B10  (121,513 params)...
+  Nominal: rho_ours=0.0280 rho_b10=0.0264 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[2/5] Case=39 Seed=1 (01:41:14)
+  Training Ours (126,144 params)...
+  Training B10  (121,513 params)...
+  Nominal: rho_ours=0.0280 rho_b10=0.0263 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[3/5] Case=39 Seed=2 (01:42:41)
+  Training Ours (126,144 params)...
+  Training B10  (121,513 params)...
+  Nominal: rho_ours=0.0280 rho_b10=0.0263 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[4/5] Case=39 Seed=3 (01:44:07)
+  Training Ours (126,144 params)...
+  Training B10  (121,513 params)...
+  Nominal: rho_ours=0.0280 rho_b10=0.0263 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[5/5] Case=39 Seed=4 (01:45:35)
+  Training Ours (126,144 params)...
+  Training B10  (121,513 params)...
+  Nominal: rho_ours=0.0279 rho_b10=0.0262 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+  Saved 130 records to results/falsesafety/fs_39.json
+
+============================================================
+FALSE-SAFE RATE SUMMARY
+  Case   Nominal%  Max Stressed%
+============================================================
+    39        0.0            0.0
+
+Full results: results/falsesafety/fs_39.json
+

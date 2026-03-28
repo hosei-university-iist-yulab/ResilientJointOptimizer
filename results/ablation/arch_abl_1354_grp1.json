@@ -1,0 +1,107 @@
+[
+  {
+    "case": 1354,
+    "seed": 0,
+    "ablation": "A-full",
+    "error": "unsupported operand type(s) for +: 'NoneType' and 'float'"
+  },
+  {
+    "case": 1354,
+    "seed": 1,
+    "ablation": "A-full",
+    "error": "unsupported operand type(s) for +: 'NoneType' and 'float'"
+  },
+  {
+    "case": 1354,
+    "seed": 2,
+    "ablation": "A-full",
+    "error": "unsupported operand type(s) for +: 'NoneType' and 'float'"
+  },
+  {
+    "case": 1354,
+    "seed": 3,
+    "ablation": "A-full",
+    "error": "unsupported operand type(s) for +: 'NoneType' and 'float'"
+  },
+  {
+    "case": 1354,
+    "seed": 4,
+    "ablation": "A-full",
+    "error": "unsupported operand type(s) for +: 'NoneType' and 'float'"
+  },
+  {
+    "case": 1354,
+    "seed": 0,
+    "ablation": "A-no-cross",
+    "rho_mean": 0.051840534123281636,
+    "rho_std": 0.0016596904526653745,
+    "stability_rate": 100.0,
+    "total_loss": 818352034065.0667,
+    "dispatch_cost": 259.9998779296875,
+    "coupling_loss": 0.0,
+    "n_params": 647068,
+    "use_physics_mask": true,
+    "use_causal_mask": true,
+    "use_cross_attention": false
+  },
+  {
+    "case": 1354,
+    "seed": 1,
+    "ablation": "A-no-cross",
+    "rho_mean": 0.05184199372306466,
+    "rho_std": 0.001625298626569475,
+    "stability_rate": 100.0,
+    "total_loss": 820987201672.5333,
+    "dispatch_cost": 259.9998779296875,
+    "coupling_loss": 0.0,
+    "n_params": 647068,
+    "use_physics_mask": true,
+    "use_causal_mask": true,
+    "use_cross_attention": false
+  },
+  {
+    "case": 1354,
+    "seed": 2,
+    "ablation": "A-no-cross",
+    "rho_mean": 0.05204896638169885,
+    "rho_std": 0.0016323327688250453,
+    "stability_rate": 100.0,
+    "total_loss": 817892945646.9333,
+    "dispatch_cost": 259.9998779296875,
+    "coupling_loss": 0.0,
+    "n_params": 647068,
+    "use_physics_mask": true,
+    "use_causal_mask": true,
+    "use_cross_attention": false
+  },
+  {
+    "case": 1354,
+    "seed": 3,
+    "ablation": "A-no-cross",
+    "rho_mean": 0.051987133889148635,
+    "rho_std": 0.0017277642449805147,
+    "stability_rate": 100.0,
+    "total_loss": 820825305907.2,
+    "dispatch_cost": 259.9998779296875,
+    "coupling_loss": 0.0,
+    "n_params": 647068,
+    "use_physics_mask": true,
+    "use_causal_mask": true,
+    "use_cross_attention": false
+  },
+  {
+    "case": 1354,
+    "seed": 4,
+    "ablation": "A-no-cross",
+    "rho_mean": 0.051779311274488767,
+    "rho_std": 0.001815590697627294,
+    "stability_rate": 100.0,
+    "total_loss": 820604532599.4667,
+    "dispatch_cost": 259.9998779296875,
+    "coupling_loss": 0.0,
+    "n_params": 647068,
+    "use_physics_mask": true,
+    "use_causal_mask": true,
+    "use_cross_attention": false
+  }
+]

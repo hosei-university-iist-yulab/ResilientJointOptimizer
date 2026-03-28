@@ -1,0 +1,314 @@
+{
+  "1354": {
+    "mild": {
+      "tier": {
+        "name": "mild",
+        "p": 0.05,
+        "sigma_j": 20.0
+      },
+      "models": {
+        "B10": {
+          "rho_mean": 0.07182259698708852,
+          "rho_std": 0.0001920667855301872,
+          "rho_min": 0.06337502598762512,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018856156384572387,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B11": {
+          "error": "no data"
+        },
+        "B12": {
+          "rho_mean": 0.07148332277933757,
+          "rho_std": 0.00019203740521334112,
+          "rho_min": 0.06337669491767883,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018853267829399556,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B-ROPF": {
+          "rho_mean": 0.04062242329120636,
+          "rho_std": 0.00026183598674833775,
+          "rho_min": 0.05942064896225929,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00025705734151415527,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 1932808
+        },
+        "B-SOPF": {
+          "error": "no data"
+        },
+        "B-Hinf": {
+          "error": "no data"
+        },
+        "Ours": {
+          "rho_mean": 0.05768520623445511,
+          "rho_std": 0.0005174169782549143,
+          "rho_min": 0.04413982108235359,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00044424051884561777,
+          "R_mean": 0.00027058395789936185,
+          "J_mean": 0.00018392408674117178,
+          "n_params": 201243
+        }
+      }
+    },
+    "moderate": {
+      "tier": {
+        "name": "moderate",
+        "p": 0.15,
+        "sigma_j": 50.0
+      },
+      "models": {
+        "B10": {
+          "rho_mean": 0.07182259698708852,
+          "rho_std": 0.0001920667855301872,
+          "rho_min": 0.06337502598762512,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018856156384572387,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B11": {
+          "error": "no data"
+        },
+        "B12": {
+          "rho_mean": 0.07148332277933757,
+          "rho_std": 0.00019203740521334112,
+          "rho_min": 0.06337669491767883,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018853267829399556,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B-ROPF": {
+          "rho_mean": 0.04062242329120636,
+          "rho_std": 0.00026183598674833775,
+          "rho_min": 0.05942064896225929,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00025705734151415527,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 1932808
+        },
+        "B-SOPF": {
+          "error": "no data"
+        },
+        "B-Hinf": {
+          "error": "no data"
+        },
+        "Ours": {
+          "rho_mean": 0.05768520623445511,
+          "rho_std": 0.0007068691193126142,
+          "rho_min": 0.03281249478459358,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00044424051884561777,
+          "R_mean": 0.00027058395789936185,
+          "J_mean": 0.00018392408674117178,
+          "n_params": 201243
+        }
+      }
+    },
+    "stressed": {
+      "tier": {
+        "name": "stressed",
+        "p": 0.25,
+        "sigma_j": 100.0
+      },
+      "models": {
+        "B10": {
+          "rho_mean": 0.07182259698708852,
+          "rho_std": 0.0001920667855301872,
+          "rho_min": 0.06337502598762512,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018856156384572387,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B11": {
+          "error": "no data"
+        },
+        "B12": {
+          "rho_mean": 0.07148332277933757,
+          "rho_std": 0.00019203740521334112,
+          "rho_min": 0.06337669491767883,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018853267829399556,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B-ROPF": {
+          "rho_mean": 0.04062242329120636,
+          "rho_std": 0.00026183598674833775,
+          "rho_min": 0.05942064896225929,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00025705734151415527,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 1932808
+        },
+        "B-SOPF": {
+          "error": "no data"
+        },
+        "B-Hinf": {
+          "error": "no data"
+        },
+        "Ours": {
+          "rho_mean": 0.05768520623445511,
+          "rho_std": 0.001019461895339191,
+          "rho_min": 0.015182430855929852,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00044424051884561777,
+          "R_mean": 0.00027058395789936185,
+          "J_mean": 0.00018392408674117178,
+          "n_params": 201243
+        }
+      }
+    },
+    "severe": {
+      "tier": {
+        "name": "severe",
+        "p": 0.35,
+        "sigma_j": 150.0
+      },
+      "models": {
+        "B10": {
+          "rho_mean": 0.07182259698708852,
+          "rho_std": 0.0001920667855301872,
+          "rho_min": 0.06337502598762512,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018856156384572387,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B11": {
+          "error": "no data"
+        },
+        "B12": {
+          "rho_mean": 0.07148332277933757,
+          "rho_std": 0.00019203740521334112,
+          "rho_min": 0.06337669491767883,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018853267829399556,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B-ROPF": {
+          "rho_mean": 0.04062242329120636,
+          "rho_std": 0.00026183598674833775,
+          "rho_min": 0.05942064896225929,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00025705734151415527,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 1932808
+        },
+        "B-SOPF": {
+          "error": "no data"
+        },
+        "B-Hinf": {
+          "error": "no data"
+        },
+        "Ours": {
+          "rho_mean": 0.05768520623445511,
+          "rho_std": 0.0015733058098703623,
+          "rho_min": -0.01033277902752161,
+          "stability_rate": 0.1,
+          "n_unstable": 999,
+          "K_mean": 0.00044424051884561777,
+          "R_mean": 0.00027058395789936185,
+          "J_mean": 0.00018392408674117178,
+          "n_params": 201243
+        }
+      }
+    },
+    "extreme": {
+      "tier": {
+        "name": "extreme",
+        "p": 0.45,
+        "sigma_j": 200.0
+      },
+      "models": {
+        "B10": {
+          "rho_mean": 0.07182259698708852,
+          "rho_std": 0.0001920667855301872,
+          "rho_min": 0.06337502598762512,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018856156384572387,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B11": {
+          "error": "no data"
+        },
+        "B12": {
+          "rho_mean": 0.07148332277933757,
+          "rho_std": 0.00019203740521334112,
+          "rho_min": 0.06337669491767883,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00018853267829399556,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 193936
+        },
+        "B-ROPF": {
+          "rho_mean": 0.04062242329120636,
+          "rho_std": 0.00026183598674833775,
+          "rho_min": 0.05942064896225929,
+          "stability_rate": 100.0,
+          "n_unstable": 0,
+          "K_mean": 0.00025705734151415527,
+          "R_mean": 0.0,
+          "J_mean": 0.0,
+          "n_params": 1932808
+        },
+        "B-SOPF": {
+          "error": "no data"
+        },
+        "B-Hinf": {
+          "error": "no data"
+        },
+        "Ours": {
+          "rho_mean": 0.05768520623445511,
+          "rho_std": 0.002220195485278964,
+          "rho_min": -0.04320238530635834,
+          "stability_rate": 0.0,
+          "n_unstable": 1000,
+          "K_mean": 0.00044424051884561777,
+          "R_mean": 0.00027058395789936185,
+          "J_mean": 0.00018392408674117178,
+          "n_params": 201243
+        }
+      }
+    }
+  }
+}

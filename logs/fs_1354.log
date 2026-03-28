@@ -1,0 +1,44 @@
+Note: torch_geometric not available. Using fallback GNN implementation.
+Device: cuda
+GPU: NVIDIA GeForce RTX 3090
+
+[1/5] Case=1354 Seed=0 (01:39:37)
+  Training Ours (207,643 params)...
+  Training B10  (202,512 params)...
+  Nominal: rho_ours=0.0613 rho_b10=0.0576 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[2/5] Case=1354 Seed=1 (01:41:49)
+  Training Ours (207,643 params)...
+  Training B10  (202,512 params)...
+  Nominal: rho_ours=0.0613 rho_b10=0.0576 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[3/5] Case=1354 Seed=2 (01:43:53)
+  Training Ours (207,643 params)...
+  Training B10  (202,512 params)...
+  Nominal: rho_ours=0.0613 rho_b10=0.0576 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[4/5] Case=1354 Seed=3 (01:45:58)
+  Training Ours (207,643 params)...
+  Training B10  (202,512 params)...
+  Nominal: rho_ours=0.0613 rho_b10=0.0576 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+[5/5] Case=1354 Seed=4 (01:48:00)
+  Training Ours (207,643 params)...
+  Training B10  (202,512 params)...
+  Nominal: rho_ours=0.0613 rho_b10=0.0576 false_safe=0.0%
+  Stressed grid: max false_safe_rate = 0.0%
+
+  Saved 130 records to results/falsesafety/fs_1354.json
+
+============================================================
+FALSE-SAFE RATE SUMMARY
+  Case   Nominal%  Max Stressed%
+============================================================
+  1354        0.0            0.0
+
+Full results: results/falsesafety/fs_1354.json
+

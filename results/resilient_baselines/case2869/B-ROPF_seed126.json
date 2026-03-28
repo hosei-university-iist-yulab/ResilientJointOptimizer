@@ -1,0 +1,16 @@
+{
+  "rho_mean": 0.041702311336994174,
+  "rho_std": 6.548557607981712e-05,
+  "rho_min": 0.0415419265627861,
+  "stability_rate": 100.0,
+  "n_samples": 75,
+  "model": "B-ROPF",
+  "case_id": 2869,
+  "seed": 126,
+  "epochs": 300,
+  "n_params": 4000508,
+  "train_time_s": 678.3,
+  "K_mean": 0.00013455140287987888,
+  "R_mean": 0.0,
+  "J_mean": 0.0
+}

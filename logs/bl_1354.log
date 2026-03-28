@@ -1,0 +1,105 @@
+Note: torch_geometric not available. Using fallback GNN implementation.
+Device: cuda
+GPU: NVIDIA GeForce RTX 3090
+
+[1/5] Case=1354 Seed=0 (01:39:37)
+  Training (207,643 params)...
+  Evaluating p=0.05...
+    iid rho=0.0599, ΔR=0.0050
+    GE  rho=0.0598, ΔR=0.0051
+    Run length: geom_pred=0.05 GE_obs=1.06 ratio=20.13x
+    ΔR_ratio (GE/iid): 1.020
+  Evaluating p=0.10...
+    iid rho=0.0544, ΔR=0.0105
+    GE  rho=0.0542, ΔR=0.0107
+    Run length: geom_pred=0.11 GE_obs=1.34 ratio=12.08x
+    ΔR_ratio (GE/iid): 1.024
+  Evaluating p=0.20...
+    iid rho=0.0413, ΔR=0.0236
+    GE  rho=0.0409, ΔR=0.0240
+    Run length: geom_pred=0.25 GE_obs=1.54 ratio=6.15x
+    ΔR_ratio (GE/iid): 1.018
+
+[2/5] Case=1354 Seed=1 (01:41:44)
+  Training (207,643 params)...
+  Evaluating p=0.05...
+    iid rho=0.0600, ΔR=0.0050
+    GE  rho=0.0599, ΔR=0.0051
+    Run length: geom_pred=0.05 GE_obs=1.06 ratio=20.22x
+    ΔR_ratio (GE/iid): 1.022
+  Evaluating p=0.10...
+    iid rho=0.0545, ΔR=0.0105
+    GE  rho=0.0542, ΔR=0.0108
+    Run length: geom_pred=0.11 GE_obs=1.34 ratio=12.05x
+    ΔR_ratio (GE/iid): 1.026
+  Evaluating p=0.20...
+    iid rho=0.0414, ΔR=0.0236
+    GE  rho=0.0410, ΔR=0.0239
+    Run length: geom_pred=0.25 GE_obs=1.54 ratio=6.17x
+    ΔR_ratio (GE/iid): 1.015
+
+[3/5] Case=1354 Seed=2 (01:43:41)
+  Training (207,643 params)...
+  Evaluating p=0.05...
+    iid rho=0.0600, ΔR=0.0050
+    GE  rho=0.0599, ΔR=0.0051
+    Run length: geom_pred=0.05 GE_obs=1.06 ratio=20.16x
+    ΔR_ratio (GE/iid): 1.021
+  Evaluating p=0.10...
+    iid rho=0.0545, ΔR=0.0105
+    GE  rho=0.0542, ΔR=0.0108
+    Run length: geom_pred=0.11 GE_obs=1.33 ratio=11.97x
+    ΔR_ratio (GE/iid): 1.026
+  Evaluating p=0.20...
+    iid rho=0.0414, ΔR=0.0236
+    GE  rho=0.0410, ΔR=0.0239
+    Run length: geom_pred=0.25 GE_obs=1.54 ratio=6.16x
+    ΔR_ratio (GE/iid): 1.015
+
+[4/5] Case=1354 Seed=3 (01:45:39)
+  Training (207,643 params)...
+  Evaluating p=0.05...
+    iid rho=0.0599, ΔR=0.0050
+    GE  rho=0.0598, ΔR=0.0051
+    Run length: geom_pred=0.05 GE_obs=1.06 ratio=20.17x
+    ΔR_ratio (GE/iid): 1.029
+  Evaluating p=0.10...
+    iid rho=0.0544, ΔR=0.0105
+    GE  rho=0.0542, ΔR=0.0107
+    Run length: geom_pred=0.11 GE_obs=1.34 ratio=12.05x
+    ΔR_ratio (GE/iid): 1.022
+  Evaluating p=0.20...
+    iid rho=0.0413, ΔR=0.0236
+    GE  rho=0.0408, ΔR=0.0241
+    Run length: geom_pred=0.25 GE_obs=1.53 ratio=6.13x
+    ΔR_ratio (GE/iid): 1.021
+
+[5/5] Case=1354 Seed=4 (01:47:22)
+  Training (207,643 params)...
+  Evaluating p=0.05...
+    iid rho=0.0599, ΔR=0.0050
+    GE  rho=0.0598, ΔR=0.0051
+    Run length: geom_pred=0.05 GE_obs=1.06 ratio=20.11x
+    ΔR_ratio (GE/iid): 1.024
+  Evaluating p=0.10...
+    iid rho=0.0544, ΔR=0.0105
+    GE  rho=0.0541, ΔR=0.0108
+    Run length: geom_pred=0.11 GE_obs=1.33 ratio=11.99x
+    ΔR_ratio (GE/iid): 1.029
+  Evaluating p=0.20...
+    iid rho=0.0413, ΔR=0.0236
+    GE  rho=0.0409, ΔR=0.0240
+    Run length: geom_pred=0.25 GE_obs=1.53 ratio=6.12x
+    ΔR_ratio (GE/iid): 1.018
+
+======================================================================
+BURST LOSS SUMMARY: ΔR ratio (GE / i.i.d.) at matched mean loss rate
+  Case     p    GE ΔR    iid ΔR   Ratio   GE run   Geom
+======================================================================
+  1354  0.05   0.0051    0.0050   1.023     1.06   0.05
+  1354  0.10   0.0107    0.0105   1.025     1.34   0.11
+  1354  0.20   0.0240    0.0236   1.017     1.54   0.25
+
+Note: Ratio ≥ 1.0 confirms i.i.d. bound is CONSERVATIVE under burst loss.
+Full results: results/burstloss/bl_1354.json
+

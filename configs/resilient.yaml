@@ -1,0 +1,153 @@
+# Multi-Impairment Resilient Co-Optimization Configuration
+# Used by ResilientJointOptimizer (our model) and ResilientPowerGridDataset
+
+# =============================================================================
+# Data Settings
+# =============================================================================
+data:
+  cases: [39, 57, 118, 145, 300, 1354, 1888, 2869]
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  num_scenarios: 1000
+  seed: 42
+
+# Communication delay settings (same as base paper)
+delays:
+  distribution: "lognormal"
+  mean_ms: 50
+  std_ms: 20
+  min_ms: 5
+  max_ms: 500
+
+# NEW: Communication impairment settings
+impairments:
+  # Packet loss: Beta(alpha, beta), mean ~ alpha/(alpha+beta)
+  loss_alpha: 2.0
+  loss_beta: 8.0          # mean ~ 20% (was 9% — too mild, rho never stressed)
+  loss_max: 0.6           # p_crit safety cap
+
+  # Jitter: Gamma(shape, scale), mean = shape * scale
+  jitter_shape: 2.0
+  jitter_scale: 40.0      # mean ~ 80ms (was 30ms — too mild)
+  jitter_max_ms: 300.0
+
+  # sigma_max for normalization in rho computation
+  sigma_max_ms: 300.0
+
+# NEW: Markov channel model
+channel:
+  transition_matrix:
+    - [0.95, 0.04, 0.01]  # From GOOD
+    - [0.05, 0.85, 0.10]  # From DEGRADED
+    - [0.20, 0.10, 0.70]  # From FAILED
+  initial_distribution: [0.9, 0.08, 0.02]
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  embed_dim: 128
+  hidden_dim: 256
+  gnn_layers: 3
+  gnn_type: "GAT"
+  num_heads: 8
+  attention_dropout: 0.1
+  use_causal_mask: true
+  use_physics_mask: true
+
+  # Physics mask (same as base)
+  physics_mask_gamma: 0.1
+  adaptive_gamma: true
+
+  # Encoder dimensions
+  energy_input_dim: 5     # [P, Q, V, theta, omega]
+  comm_input_dim: 6       # [tau, R, B, p, sigma_j, s]  <-- was 3
+
+  # Decoder
+  decoder_layers: 2
+
+  # NEW: Channel state encoder
+  channel_encoder_hidden: 64
+  channel_n_states: 3
+
+# =============================================================================
+# Loss Function Weights
+# =============================================================================
+loss:
+  # L_E: Energy loss (same as base)
+  cost_weight: 1.0
+  voltage_weight: 10.0
+  frequency_weight: 100.0
+
+  # L_I: Communication loss (same as base)
+  latency_weight: 1.0
+  bandwidth_penalty: 10.0
+
+  # L_coupling: Stability coupling — alpha must be high enough to compete
+  # with L_cost (~1e9). Normalized by batch: effective weight ~ alpha * 1e8
+  alpha: 1e8
+  beta: 0.1
+  rho_min: 0.001
+
+  # L_align: Contrastive (same as base)
+  contrastive_weight: 0.1
+  temperature: 0.07
+
+  # NEW: L_channel: Markov state prediction
+  channel_weight: 0.5
+
+# =============================================================================
+# Stability Computation
+# =============================================================================
+stability:
+  # K initialization: 50% of budget (delay-dominant)
+  k_budget_fraction: 0.5
+  # R initialization: 30% of budget
+  r_budget_fraction: 0.3
+  # J initialization: 20% of budget (quadratic, smaller)
+  j_budget_fraction: 0.2
+
+  safety_factor: 0.9
+  rho_min: 0.01
+
+# =============================================================================
+# Training Settings
+# =============================================================================
+training:
+  epochs: 500
+  epochs_large: 300       # For cases >= 1000 buses
+  batch_size: 32
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  optimizer: "adamw"
+  gradient_clip: 1.0
+
+  scheduler: "cosine"
+  warmup_epochs: 10
+  min_lr: 1e-6
+
+  patience: 50
+  min_delta: 1e-4
+  save_every: 10
+  keep_last_k: 5
+
+# =============================================================================
+# Experiment Settings
+# =============================================================================
+experiment:
+  seeds: [0, 42, 84, 126, 168, 210, 252, 294, 336, 378,
+          420, 462, 504, 546, 588, 630, 672, 714, 756, 798]
+  n_seeds: 20
+  statistical_test: "wilcoxon"
+  significance_level: 0.01
+
+# =============================================================================
+# Hardware
+# =============================================================================
+hardware:
+  device: "cuda"
+  gpu_ids: [3, 4, 5, 6]  # CUDA 3-6 on shared server
+  num_workers: 4
+  pin_memory: true
+  mixed_precision: true

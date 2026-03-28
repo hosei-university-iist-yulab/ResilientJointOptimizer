@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Multi-impairment stability comparison across 8 real power systems (mean $\pm$ std over 20 seeds).}
+\label{tab:comparison}
+\small
+\begin{tabular}{lcccccccccccccccc}
+\toprule
+Model & \multicolumn{2}{c}{Case-39} & \multicolumn{2}{c}{Case-57} & \multicolumn{2}{c}{Case-118} & \multicolumn{2}{c}{Case-145} & \multicolumn{2}{c}{Case-300} & \multicolumn{2}{c}{PEGASE-1354} & \multicolumn{2}{c}{RTE-1888} & \multicolumn{2}{c}{PEGASE-2869} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){14-15}\cmidrule(lr){16-17}
+ & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% & $\bar{\rho}$ & Stab\% \\
+\midrule
+B10: Delay-Only & $0.0333 \pm 0.0000$ & 100.0 & $0.0401 \pm 0.0000$ & 100.0 & $0.0480 \pm 0.0000$ & 100.0 & $0.0712 \pm 0.0000$ & 100.0 & $0.0574 \pm 0.0000$ & 100.0 & $0.0718 \pm 0.0000$ & 100.0 & $0.0667 \pm 0.0000$ & 100.0 & $0.0737 \pm 0.0000$ & 100.0 \\
+B11: Fixed Constants & $0.0237 \pm 0.0003$ & 100.0 & $0.0286 \pm 0.0005$ & 100.0 & $0.0341 \pm 0.0002$ & 100.0 & $0.0507 \pm 0.0004$ & 100.0 & $0.0408 \pm 0.0002$ & 100.0 & $0.0519 \pm 0.0002$ & 100.0 & $0.0482 \pm 0.0002$ & 100.0 & $0.0533 \pm 0.0002$ & 100.0 \\
+B12: TCP Retransmit & $0.0333 \pm 0.0000$ & 100.0 & $0.0400 \pm 0.0000$ & 100.0 & $0.0479 \pm 0.0000$ & 100.0 & $0.0711 \pm 0.0000$ & 100.0 & $0.0573 \pm 0.0000$ & 100.0 & $0.0715 \pm 0.0000$ & 100.0 & $0.0664 \pm 0.0000$ & 100.0 & $0.0734 \pm 0.0000$ & 100.0 \\
+B-ROPF: Robust OPF & $0.0185 \pm 0.0000$ & 100.0 & $0.0223 \pm 0.0000$ & 100.0 & $0.0267 \pm 0.0000$ & 100.0 & $0.0396 \pm 0.0000$ & 100.0 & $0.0319 \pm 0.0000$ & 100.0 & $0.0406 \pm 0.0000$ & 100.0 & $0.0377 \pm 0.0000$ & 100.0 & $0.0417 \pm 0.0000$ & 100.0 \\
+B-SOPF: Stochastic OPF & $0.0310 \pm 0.0001$ & 100.0 & $0.0373 \pm 0.0001$ & 100.0 & $0.0446 \pm 0.0000$ & 100.0 & $0.0662 \pm 0.0001$ & 100.0 & $0.0533 \pm 0.0000$ & 100.0 & $0.0678 \pm 0.0000$ & 100.0 & $0.0630 \pm 0.0000$ & 100.0 & $0.0697 \pm 0.0000$ & 100.0 \\
+B-H$\infty$: H-Inf Ctrl & $0.0320 \pm 0.0001$ & 100.0 & $0.0385 \pm 0.0001$ & 100.0 & $0.0461 \pm 0.0000$ & 100.0 & $0.0683 \pm 0.0001$ & 100.0 & $0.0550 \pm 0.0000$ & 100.0 & $0.0700 \pm 0.0000$ & 100.0 & $0.0651 \pm 0.0000$ & 100.0 & $0.0719 \pm 0.0000$ & 100.0 \\
+\textbf{Ours (Multi-Imp.)} & $0.0300 \pm 0.0001$ & 100.0 & $0.0361 \pm 0.0002$ & 100.0 & $0.0432 \pm 0.0001$ & 100.0 & $0.0641 \pm 0.0001$ & 100.0 & $0.0516 \pm 0.0001$ & 100.0 & $0.0577 \pm 0.0002$ & 100.0 & $0.0535 \pm 0.0002$ & 100.0 & $0.0592 \pm 0.0001$ & 100.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

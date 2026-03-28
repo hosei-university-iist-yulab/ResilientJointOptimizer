@@ -1,0 +1,16 @@
+{
+  "rho_mean": 0.0479067354897658,
+  "rho_std": 5.689592744514895e-05,
+  "rho_min": 0.04773298278450966,
+  "stability_rate": 100.0,
+  "n_samples": 150,
+  "model": "B12",
+  "case_id": 118,
+  "seed": 336,
+  "epochs": 500,
+  "n_params": 500696,
+  "train_time_s": 1280.3,
+  "K_mean": 0.0002977538970299065,
+  "R_mean": 0.0,
+  "J_mean": 0.0
+}
