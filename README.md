@@ -949,18 +949,20 @@ The unequal split reflects that delay is typically the dominant impairment, with
 
 ## Contact
 
-**Corresponding Author:**
-Prof. Qiaozhi Hua
-School of Computer Science
-Hubei University of Arts and Science, Xiangyang 441053, China
+<a href="https://github.com/mesabo">
+  <img src="https://github.com/mesabo.png" width="60" style="border-radius:50%">
+</a>
 
-**First Author:**
-Franck Junior Aboya Messou
-Email: franckjunioraboya.messou@ieee.org
+**Franck Junior Aboya Messou** ([@mesabo](https://github.com/mesabo)) -- First Author
+franckjunioraboya.messou@ieee.org
+
+**Keping Yu** -- Corresponding Author, keping.yu@ieee.org
 
 ---
 
 ## Citation
+
+Predecessor (Theorem 1, delay-only): [SSRN Preprint 6368058](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368058)
 
 ```bibtex
 @article{messou2026resilient,
@@ -969,7 +971,16 @@ Email: franckjunioraboya.messou@ieee.org
   author={Messou, Franck Junior Aboya and Zhang, Shilong and Wang, Weiyu
           and Chen, Jinhua and Yu, Keping and Tolba, Amr and Hua, Qiaozhi},
   year={2026},
-  note={Manuscript in preparation. Extension of predecessor delay-only framework (Theorem 1, SSRN preprint 6368058).}
+  note={Under review}
 }
 ```
+
+## Related Repositories
+
+- [JointOptimizer](https://github.com/hosei-university-iist-yulab/JointOptimizer) -- Predecessor: Delay-Only Stability Coupling (Theorem 1, Applied Energy)
+- [NumLoRA](https://github.com/hosei-university-iist-yulab/NumLoRA) -- Calibrating LoRA for Continuous-Valued Inputs
+- [01-causal-slm](https://github.com/hosei-university-iist-yulab/01-causal-slm) -- Causal Sensor Language Models (VTC2026-Spring)
+- [smartgrid-coopt](https://github.com/mesabo/smartgrid-coopt) -- Smart Grid Co-Optimisation Framework
+
+Full publication list: [Google Scholar](https://scholar.google.com/scholar?q=Franck+Junior+Aboya+Messou) | [GitHub](https://github.com/mesabo)
 
